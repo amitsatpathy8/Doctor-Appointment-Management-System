@@ -1,0 +1,183 @@
+html,
+body {
+  font-family: Roboto, Arial;
+  margin: 0px 0px;
+  background: url(../assets/login1.png);
+  background-size: cover;
+}
+html {
+  width: max(270px, 100%);
+}
+
+.left-side-logo-ancher {
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+.selected-button {
+  /* font-size: 13px; */
+  font-size: 23px;
+  font-weight: 700;
+  background-color: rgb(255, 174, 0);
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.non-selected-button {
+	text-decoration:none;
+	color:black;
+  font-size: 23px;
+  font-weight: 00;
+  border-style: none;
+  border-width: 2px;
+  background-color: rgb(229, 229, 229);
+  border-radius: 25px;
+  /* padding: 0px 12px; */
+  cursor: pointer;
+}
+
+.doctor-lable {
+  font-size: 23px;
+  font-weight: 400;
+  margin-right: 12px;
+  opacity: 0.55;
+  align-self: center;
+}
+
+.left-logo-div {
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+}
+
+.right-function-div {
+  display: inline-flex;
+  margin: auto;
+  margin-right: 0;
+  align-items: center;
+  text-align: center;
+  line-height: 50px;
+}
+
+.header {
+  background-color: rgb(229, 229, 229);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.input-tag-form {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: Roboto, Arial;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: 0px 3px 4px grey;
+}
+
+.submit-button {
+  margin-bottom: 15px;
+  font-family: Roboto, Arial;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgb(255, 174, 0);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  float: right;
+  margin-right: 1%;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px gray;
+}
+
+.submit-button-div {
+  display: flexbox;
+  width: 83%;
+}
+
+.welcome-message-div {
+  width: 80%;
+}
+
+.welcome-message {
+  margin: 0px;
+  font-family: Roboto, Arial;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: left;
+  line-height: 36px;
+  margin-top: 12px;
+}
+
+.sub-message {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 2px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Roboto, Arial;
+  color: rgb(122, 120, 120);
+}
+
+@media screen and (max-width: 700px) {
+  .form-div {
+    width: 100vw;
+    border-style: solid;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10% 20px 10%;
+    box-shadow: 0px 3px 5px black;
+    background-color: white;
+    background: transparent;
+    background: rgba(255, 255, 255, 0.65);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .form-div {
+    width: 50vw;
+    border-style: solid;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 5px black;
+    background-color: white;
+    background: transparent;
+    background: rgba(255, 255, 255, 0.65);
+  }
+}
