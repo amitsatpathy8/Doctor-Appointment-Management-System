@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.dams.DoctorAppointmentManagementSystem.iotemplets.DoctorDetails;
+import com.dams.DoctorAppointmentManagementSystem.iotemplets.DoctorLogin;
 
 @Controller
 public class URINavigator {
@@ -22,7 +23,10 @@ public class URINavigator {
     }
     
     @RequestMapping("/doctorLogin")
-    public String doctorLogin() {
-    	return "login";
+    public ModelAndView doctorLogin() {
+    	DoctorLogin login = new DoctorLogin();
+    	ModelAndView view = new ModelAndView("login");
+    	view.addObject(login);
+    	return view;
     }
 }
